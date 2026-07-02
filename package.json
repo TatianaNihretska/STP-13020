@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/STP-13020",
+    "build": "vite build --base=/STP-13020/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
