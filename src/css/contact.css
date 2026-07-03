@@ -1,0 +1,37 @@
+.contact{
+padding: 64px 0px 64px 0px;
+background-color: blueviolet;
+background: linear-gradient(325deg, #b57bee 0%, #392d69 100%);
+
+}
+.contact-container{
+    margin: 0 auto;
+    text-align: center;
+  
+}
+
+.contact-title {
+  font-family: 'Google Sans Code', sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  color: #e7e6ca;
+  margin-bottom: 12px;
+}
+
+.contact-text {
+  font-family: 'Google Sans Code', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #e7e6ca;
+  margin-bottom: 12px;
+}
+
+.contact-email {
+  font-family: 'Google Sans Code', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #e7e6ca;
+}
