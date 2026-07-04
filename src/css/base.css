@@ -1,10 +1,10 @@
-
 body {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background: linear-gradient(to top, #b57bee 0%, #392d69 100%);
 }
 
 main {

@@ -1,37 +1,59 @@
-.contact{
-padding: 64px 0px 64px 0px;
-background-color: blueviolet;
-background: linear-gradient(325deg, #b57bee 0%, #392d69 100%);
-
+.contact {
+  padding: 64px 0px 64px 0px;
+  background-color: blueviolet;
+  background: linear-gradient(325deg, #b57bee 0%, #392d69 100%);
 }
-.contact-container{
-    margin: 0 auto;
-    text-align: center;
-  
+.contact-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 375px;
+  padding: 0;
 }
 
 .contact-title {
   font-family: 'Google Sans Code', sans-serif;
   font-weight: 800;
-  font-size: 56px;
+  font-size: 30px;
   color: #e7e6ca;
   margin-bottom: 12px;
+  padding: 10px;
 }
 
 .contact-text {
   font-family: 'Google Sans Code', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  text-align: center;
   color: #e7e6ca;
   margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  padding: 10px;
 }
-
 .contact-email {
   font-family: 'Google Sans Code', sans-serif;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 16px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #e7e6ca;
+  padding: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    background: linear-gradient(to left, #b57bee 0%, #392d69 100%);
+  }
+
+  .contact-container {
+    max-width: 800px;
+  }
+  .contact-title {
+    font-size: 56px;
+  }
+  .contact-text {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .contact-email {
+    font-size: 30px;
+  }
 }
