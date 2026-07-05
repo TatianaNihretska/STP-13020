@@ -1,13 +1,35 @@
+:root {
+  --color-page-start: #b57bee;
+  --color-page-end: #392d69;
+  --color-surface: #e7e6ca;
+  --color-text: #010101;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(to top, #b57bee 0%, #392d69 100%);
+  background: linear-gradient(
+    to top,
+    var(--color-page-start) 0%,
+    var(--color-page-end) 100%
+  );
+}
+
+body[data-menu='open'] {
+  overflow: hidden;
 }
 
 main {
   flex-grow: 1;
 }
-
