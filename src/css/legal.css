@@ -1,12 +1,8 @@
 .legal-page {
   min-height: 100vh;
   padding: 104px 0 72px;
-  background: linear-gradient(
-    180deg,
-    var(--color-page-end) 0%,
-    var(--color-page-end) 28%,
-    var(--color-page-start) 100%
-  );
+  background: rgba(57, 45, 105, 1);
+
   color: var(--color-surface);
 }
 
@@ -26,7 +22,7 @@
   padding: 8px 18px;
   border: 1px solid var(--color-surface);
   border-radius: 20px;
-  color: var(--color-surface);
+  background: rgba(130, 80, 180, 1);
   font-family: 'Google Sans Code', sans-serif;
   font-size: 16px;
   font-weight: 400;
