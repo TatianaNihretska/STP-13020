@@ -8,13 +8,13 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/STP-13020/favikon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toy Room</title>
-    <script type="module" crossorigin src="/STP-13020/assets/vendor-CN_g6Fac.js"></script>
-    <script type="module" crossorigin src="/STP-13020/assets/main-BcDV8o_X.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-13020/assets/main-C7ywGuC5.css">
-    <link rel="stylesheet" crossorigin href="/STP-13020/assets/vendor-CtIR5pHR.css">
+    <script type="module" crossorigin src="/STP-13020/assets/vendor-COfsTGXc.js"></script>
+    <script type="module" crossorigin src="/STP-13020/assets/main-BNNmwMZG.js"></script>
+    <link rel="stylesheet" crossorigin href="/STP-13020/assets/main-CI5pb9Wy.css">
+    <link rel="stylesheet" crossorigin href="/STP-13020/assets/vendor-vL0Q9Dr-.css">
   </head>
   <body>
     <header class="site-header" data-site-header>
@@ -26,12 +26,8 @@
 
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="./index.html#about">About</a>
-      <button class="nav-placeholder" type="button" aria-disabled="true">
-        Gameplay
-      </button>
-      <button class="nav-placeholder" type="button" aria-disabled="true">
-        Gallery
-      </button>
+      <a href="./index.html#gameplay">Gameplay</a>
+      <a href="./index.html#gallery">Gallery</a>
       <a href="./index.html#faq">FAQ</a>
       <a href="./index.html#contact">Contact</a>
     </nav>
@@ -79,13 +75,13 @@
           About the Game
         </a>
         <span class="mobile-nav-dot" aria-hidden="true"></span>
-        <button class="nav-placeholder" type="button" aria-disabled="true">
+        <a href="./index.html#gameplay" data-action="close-menu">
           Gameplay
-        </button>
+        </a>
         <span class="mobile-nav-dot" aria-hidden="true"></span>
-        <button class="nav-placeholder" type="button" aria-disabled="true">
+        <a href="./index.html#gallery" data-action="close-menu">
           Gallery
-        </button>
+        </a>
         <span class="mobile-nav-dot" aria-hidden="true"></span>
         <a href="./index.html#faq" data-action="close-menu">FAQ</a>
         <span class="mobile-nav-dot" aria-hidden="true"></span>
@@ -289,6 +285,47 @@
           </p>
         </div>
       </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="gameplay-features" aria-labelledby="gameplay-features-title">
+  <div class="gameplay-features-container">
+    <div class="gameplay-features-content">
+      <h2 class="gameplay-features-title" id="gameplay-features-title">
+        Organize Messy Rooms. Find and Match.
+      </h2>
+      <p class="gameplay-features-text">
+        Discover a relaxing puzzle adventure where every room is filled with
+        hidden toys to sort, match, and organize. Explore handcrafted levels,
+        beautiful 3D collectibles, and satisfying gameplay.
+      </p>
+    </div>
+
+    <div class="gameplay-features-stage" aria-label="Toy Room gameplay screens">
+      <div class="gameplay-phone gameplay-phone-first">
+        <img
+          class="gameplay-phone-image"
+          src="/STP-13020/assets/gameplay_steps_mob_1-DA8mxdqR.png"
+          alt="New toy room unlocked screen in Toy Room"
+          loading="lazy"
+        />
+      </div>
+      <div class="gameplay-phone gameplay-phone-second">
+        <img
+          class="gameplay-phone-image"
+          src="/STP-13020/assets/gameplay_steps_mob_2-DVEEIIfb.png"
+          alt="Toy Room level map with colorful rooms"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <ul class="gameplay-features-list">
+      <li class="gameplay-features-item">Hundreds of Levels</li>
+      <li class="gameplay-features-item">Daily Rewards</li>
+      <li class="gameplay-features-item">Offline Play</li>
+      <li class="gameplay-features-item">Easy Controls</li>
     </ul>
   </div>
 </section>
@@ -622,11 +659,16 @@
       Join millions of players sorting, matching, and clearing their way through
       beautifully crafted toy worlds.
     </p>
-    <button class="faq-button">
+    <a
+      class="faq-button"
+      href="https://play.google.com/store/apps/details?id=com.crossfield.toyroom"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <svg class="store-icon" width="34" height="34">
         <use href="/STP-13020/assets/sprite-BxlCBQda.svg#icon-google-play"></use></svg>
       Play on Google Play
-    </button>
+    </a>
   </div>
 </section>
 
