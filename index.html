@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toy Room</title>
     <script type="module" crossorigin src="/STP-13020/assets/vendor-COfsTGXc.js"></script>
-    <script type="module" crossorigin src="/STP-13020/assets/main-BNNmwMZG.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-13020/assets/main-CI5pb9Wy.css">
+    <script type="module" crossorigin src="/STP-13020/assets/main-DUE-PxLB.js"></script>
+    <link rel="stylesheet" crossorigin href="/STP-13020/assets/main-JwAmY1oE.css">
     <link rel="stylesheet" crossorigin href="/STP-13020/assets/vendor-vL0Q9Dr-.css">
   </head>
   <body>
@@ -46,6 +46,7 @@
       type="button"
       data-action="open-menu"
       aria-label="Open menu"
+      aria-controls="mobile-menu"
       aria-expanded="false"
     >
       <span></span>
@@ -54,7 +55,13 @@
     </button>
   </div>
 
-  <div class="mobile-menu" data-menu data-visible="close">
+  <div
+    class="mobile-menu"
+    id="mobile-menu"
+    data-menu
+    data-visible="close"
+    aria-hidden="true"
+  >
     <div class="mobile-menu-panel">
       <div class="mobile-menu-top">
         <a class="brand" href="./index.html#about" data-action="close-menu">
@@ -116,8 +123,9 @@
         class="hero-image"
         src="/STP-13020/assets/hero-RzW3Kbg7.png"
         data-hero-image
-        data-default-src="./img/toy-room/hero.png"
-        data-click-src="./img/toy-room/hero_click.png"
+        role="button"
+        tabindex="0"
+        aria-label="Switch hero preview image"
         alt="Colorful 3D toys scattered on a playroom rug"
         width="1146"
         height="1024"
@@ -337,7 +345,12 @@
         <ul class="swiper-wrapper gallery-list">
             <li class="swiper-slide gallery-item" data-gallery-card>
                 <div class="gallery-card">
-              <img src="/STP-13020/assets/d1-C4JML0bn.jpg" alt="Match Three Toys Gameplay">
+              <img
+                src="/STP-13020/assets/d1-C4JML0bn.jpg"
+                alt="Match Three Toys Gameplay"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Match Three Toys</h3>
                     <div class="gallery-info"> 
@@ -349,7 +362,12 @@
             </li>
             <li class="swiper-slide gallery-item tall" data-gallery-card>
               <div class="gallery-card"> 
-              <img src="/STP-13020/assets/d2-Bj2GMyAP.jpg" alt="Toy Collection">
+              <img
+                src="/STP-13020/assets/d2-Bj2GMyAP.jpg"
+                alt="Toy Collection"
+                loading="lazy"
+                decoding="async"
+              >
               <div class="gallery-content">
                 <h3>Toy Collection</h3>
                 <div class="gallery-info">
@@ -361,7 +379,12 @@
             </li>
             <li class="swiper-slide gallery-item"  data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d3-ByBKWJb2.jpg" alt="Power-up Booster">
+              <img
+                src="/STP-13020/assets/d3-ByBKWJb2.jpg"
+                alt="Power-up Booster"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Power-up</h3>
                     <div class="gallery-info">
@@ -373,18 +396,29 @@
             </li>
             <li class="swiper-slide gallery-item" data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d4-C4Lo4_eM.jpg" alt="Level Complete">
+              <img
+                src="/STP-13020/assets/d4-C4Lo4_eM.jpg"
+                alt="Level Complete"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Level Complete</h3>
                     <div class="gallery-info">
                     <p>Level</p>
                     <span class="gallery-counter">4/8</span>
                 </div>
+                </div>
               </div>
             </li>
             <li class="swiper-slide gallery-item tall" data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d5-CqEywfrc.jpg" alt="Messy Room">
+              <img
+                src="/STP-13020/assets/d5-CqEywfrc.jpg"
+                alt="Messy Room"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Messy Room</h3>
                     <div class="gallery-info">
@@ -396,7 +430,12 @@
             </li>
             <li class="swiper-slide gallery-item" data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d6--woRvNZL.jpg" alt="New Themes">
+              <img
+                src="/STP-13020/assets/d6--woRvNZL.jpg"
+                alt="New Themes"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>New Themes</h3>
                     <div class="gallery-info">
@@ -408,7 +447,12 @@
             </li>
             <li class="swiper-slide gallery-item" data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d7-DF_v91UL.jpg" alt="Clean Room">
+              <img
+                src="/STP-13020/assets/d7-DF_v91UL.jpg"
+                alt="Clean Room"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Clean Room</h3>
                     <div class="gallery-info">
@@ -421,7 +465,12 @@
 
             <li class="swiper-slide gallery-item" data-gallery-card>
               <div class="gallery-card">
-              <img src="/STP-13020/assets/d8-Bs-Jt4rP.jpg" alt="Match Effect">
+              <img
+                src="/STP-13020/assets/d8-Bs-Jt4rP.jpg"
+                alt="Match Effect"
+                loading="lazy"
+                decoding="async"
+              >
                 <div class="gallery-content">
                     <h3>Match Effect</h3>
                     <div class="gallery-info">
@@ -665,7 +714,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <svg class="store-icon" width="34" height="34">
+      <svg class="store-icon" width="34" height="34" aria-hidden="true" focusable="false">
         <use href="/STP-13020/assets/sprite-BxlCBQda.svg#icon-google-play"></use></svg>
       Play on Google Play
     </a>
