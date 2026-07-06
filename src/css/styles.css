@@ -9,12 +9,14 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./legal.css');
+@import url('./reveal.css');
 
 /* Sections style */
 @import url('./header.css');
 @import url('./about.css');
 @import url('./hero.css');
 @import url('./gameplay.css');
+@import url('./gameplay-features.css');
 @import url('./gallery.css');
 @import url('./faq.css');
 @import url('./contact.css');

@@ -122,7 +122,20 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
+  text-decoration: none;
   transition:
     color 180ms ease,
     opacity 180ms ease;
+}
+
+.policy-link:hover,
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.policy-link:focus-visible,
+.terms-link:focus-visible,
+.policy-link:active,
+.terms-link:active {
+  color: #f1d982;
 }

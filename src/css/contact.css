@@ -33,10 +33,19 @@
   font-family: 'Google Sans Code', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-skip-ink: none;
   color: #e7e6ca;
   padding: 10px;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.contact-email:focus-visible,
+.contact-email:active {
+  color: #f1d982;
 }
 @media screen and (min-width: 1440px) {
   .contact {
