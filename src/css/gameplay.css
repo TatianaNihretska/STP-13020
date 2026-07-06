@@ -42,6 +42,24 @@
   border-radius: 12px;
   background-color: var(--color-surface);
   color: var(--color-text);
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 650ms ease,
+    transform 650ms ease;
+}
+
+.gameplay.is-visible .gameplay-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gameplay-list .gameplay-card:nth-child(2) {
+  transition-delay: 120ms;
+}
+
+.gameplay-list .gameplay-card:nth-child(3) {
+  transition-delay: 240ms;
 }
 
 .gameplay-image {
@@ -58,11 +76,11 @@
 }
 
 .gameplay-card-title {
-  color: var(--color-text);
+  color: #010101;
   font-family: 'Google Sans Code', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
 }
@@ -107,7 +125,7 @@
   }
 
   .gameplay-card-title {
-    font-size: 16px;
+    font-size: 30px;
     text-align: left;
   }
 

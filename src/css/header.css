@@ -78,6 +78,11 @@
   font-weight: 800;
   line-height: 1;
   text-align: center;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 120ms ease;
 }
 
 .desktop-nav a:hover,
@@ -90,6 +95,16 @@
 .mobile-nav button:focus-visible {
   background-color: var(--color-surface);
   color: var(--color-page-end);
+}
+
+.desktop-nav a:active,
+.desktop-nav button:active,
+.mobile-nav a:active,
+.mobile-nav button:active {
+  border-color: #f1d982;
+  background-color: #f1d982;
+  color: #271f45;
+  transform: translateY(1px);
 }
 
 .header-play {
@@ -105,6 +120,22 @@
   font-weight: 800;
   line-height: 1;
   text-align: center;
+  transition:
+    filter 180ms ease,
+    transform 120ms ease;
+}
+
+.header-play:hover,
+.header-play:focus-visible,
+.mobile-nav .mobile-menu-play:hover,
+.mobile-nav .mobile-menu-play:focus-visible {
+  filter: brightness(1.05);
+}
+
+.header-play:active,
+.mobile-nav .mobile-menu-play:active {
+  transform: translateY(1px);
+  filter: brightness(0.98);
 }
 
 .burger-btn,
@@ -130,6 +161,18 @@
   height: 4px;
   border-radius: 2px;
   background-color: currentColor;
+}
+
+.burger-btn:hover,
+.burger-btn:focus-visible,
+.menu-close:hover,
+.menu-close:focus-visible {
+  color: #f1d982;
+}
+
+.burger-btn:active,
+.menu-close:active {
+  transform: translateY(1px);
 }
 
 .mobile-menu {
