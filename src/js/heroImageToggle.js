@@ -7,7 +7,7 @@ if (heroImageEl) {
   let isClickedImage = false;
   let isAnimating = false;
 
-  heroImageEl.addEventListener('click', () => {
+  const switchHeroImage = () => {
     if (isAnimating) {
       return;
     }
@@ -24,5 +24,16 @@ if (heroImageEl) {
         isAnimating = false;
       }, 80);
     }, 180);
+  };
+
+  heroImageEl.addEventListener('click', switchHeroImage);
+
+  heroImageEl.addEventListener('keydown', event => {
+    if (event.key !== 'Enter' && event.key !== ' ') {
+      return;
+    }
+
+    event.preventDefault();
+    switchHeroImage();
   });
 }

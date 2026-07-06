@@ -10,25 +10,28 @@ const setMenuState = state => {
   }
 
   burgerMenuEl.dataset.visible = state;
+  burgerMenuEl.setAttribute('aria-hidden', String(state !== 'open'));
   openBtnEl.setAttribute('aria-expanded', String(state === 'open'));
   document.body.dataset.menu = state;
 };
 
-openBtnEl?.addEventListener('click', () => {
-  setMenuState('open');
-});
-
-closeMenuEls.forEach(element => {
-  element.addEventListener('click', () => {
-    setMenuState('close');
+if (burgerMenuEl && openBtnEl) {
+  openBtnEl.addEventListener('click', () => {
+    setMenuState('open');
   });
-});
 
-window.addEventListener('keydown', event => {
-  if (event.key === 'Escape') {
-    setMenuState('close');
-  }
-});
+  closeMenuEls.forEach(element => {
+    element.addEventListener('click', () => {
+      setMenuState('close');
+    });
+  });
+
+  window.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      setMenuState('close');
+    }
+  });
+}
 
 const syncHeader = () => {
   if (headerEl) {
@@ -36,5 +39,7 @@ const syncHeader = () => {
   }
 };
 
-syncHeader();
-window.addEventListener('scroll', syncHeader, { passive: true });
+if (headerEl) {
+  syncHeader();
+  window.addEventListener('scroll', syncHeader, { passive: true });
+}

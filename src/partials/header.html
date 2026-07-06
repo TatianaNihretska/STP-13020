@@ -27,6 +27,7 @@
       type="button"
       data-action="open-menu"
       aria-label="Open menu"
+      aria-controls="mobile-menu"
       aria-expanded="false"
     >
       <span></span>
@@ -35,7 +36,13 @@
     </button>
   </div>
 
-  <div class="mobile-menu" data-menu data-visible="close">
+  <div
+    class="mobile-menu"
+    id="mobile-menu"
+    data-menu
+    data-visible="close"
+    aria-hidden="true"
+  >
     <div class="mobile-menu-panel">
       <div class="mobile-menu-top">
         <a class="brand" href="./index.html#about" data-action="close-menu">
