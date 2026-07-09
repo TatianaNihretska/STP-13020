@@ -16,27 +16,26 @@
 }
 .about-list {
   display: flex;
-gap: 24px;
-flex-direction: column;
-padding: 0 31px;
+  gap: 24px;
+  flex-direction: column;
+  padding: 0 31px;
 }
-.about-icon{
+.about-icon {
   display: none;
 }
-.about-h{
+.about-h {
   font-family: 'Google Sans Code', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    color: #e7e6ca;
-    margin-bottom: 4px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #e7e6ca;
+  margin-bottom: 4px;
 }
-.about-p{
-font-family: 'Google Sans Code', sans-serif;
+.about-p {
+  font-family: 'Google Sans Code', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 193%;
   color: #e7e6ca;
-  
 }
 
 @media screen and (min-width: 1440px) {
@@ -62,54 +61,51 @@ font-family: 'Google Sans Code', sans-serif;
   }
   .about-list {
     list-style: none;
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px ;
-max-width: 800px;
-margin: 0 auto;
-flex-direction: row;
-
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: row;
   }
   .about-item {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 24px 16px;
     background-color: #e7e6ca;
-    
+
     width: calc((100% - 20px) / 2);
-    
   }
 
-  .about-h{
-    font-size: 20px; 
+  .about-h {
+    font-size: 20px;
     white-space: nowrap;
     color: black;
-   
   }
-  .about-p{
+  .about-p {
     color: black;
   }
-.about-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #f0d1bc;;
-  width: 38px;
+  .about-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f0d1bc;
+    width: 38px;
     height: 38px;
     background: #f0d1bc;
-   border-radius: 3px;
-   color: #ff8b3d;
-   
+    border-radius: 3px;
+    color: #ff8b3d;
+  }
+  .accordion-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .about-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
 }
-.accordion-icon {
-  width: 24px;
-  height: 24px;
-}
-    .about-line {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
-    }}
