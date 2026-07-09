@@ -1,0 +1,118 @@
+/* section WHY */
+.why-section {
+    background: linear-gradient(to top, #b57bee 0%, #392d69 100%);
+
+}
+
+.why-title {
+    font-family: 'Google Sans Code', sans-serif;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #e7e6ca;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.why-text {
+    display: none;
+}
+
+.why-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 0 31px;
+}
+
+.why-icon {
+    display: none;
+}
+
+.why-h {
+    font-family: 'Google Sans Code', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #e7e6ca;
+    margin-bottom: 4px;
+}
+
+.why-p {
+    font-family: 'Google Sans Code', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 193%;
+    color: #e7e6ca;
+}
+
+@media screen and (min-width: 1440px) {
+    .why-section {
+        background: linear-gradient(to left, #b57bee 0%, #392d69 100%);
+    }
+
+
+    .why-title {
+        font-size: 56px;
+        margin-bottom: 42px;
+    }
+
+    .why-text {
+        display: block;
+        font-family: 'Google Sans Code', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.93;
+        text-align: center;
+        color: #e7e6ca;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .why-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .why-item {
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 24px 16px;
+        background-color: #e7e6ca;
+
+        width: calc((100% - 48px) / 4);
+    }
+
+    .why-h {
+        font-size: 20px;
+        color: black;
+        margin-bottom: 12px;
+    }
+    .why-p{
+        color: black;
+    }
+
+    .why-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #f0d1bc;
+        width: 38px;
+        height: 38px;
+        background: #f0d1bc;
+        border-radius: 3px;
+        color: #ff8b3d;
+        margin-bottom: 16px;
+    }
+
+    .why-accordion-icon {
+        width: 37px;
+        height: 37px;
+    }
+}

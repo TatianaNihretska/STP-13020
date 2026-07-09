@@ -27,7 +27,7 @@ padding: 0 31px;
   font-family: 'Google Sans Code', sans-serif;
     font-weight: 800;
     font-size: 16px;
-    color: #010101;
+    color: #e7e6ca;
     margin-bottom: 4px;
 }
 .about-p{
@@ -35,7 +35,7 @@ font-family: 'Google Sans Code', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 193%;
-  color: #010101;
+  color: #e7e6ca;
   
 }
 
@@ -85,7 +85,11 @@ flex-direction: row;
   .about-h{
     font-size: 20px; 
     white-space: nowrap;
+    color: black;
    
+  }
+  .about-p{
+    color: black;
   }
 .about-icon {
   display: flex;
