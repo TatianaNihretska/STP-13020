@@ -1,8 +1,9 @@
-.about {
+/* section WHY */
+.why-section {
   background: linear-gradient(to top, #b57bee 0%, #392d69 100%);
 }
 
-.about-title {
+.why-title {
   font-family: 'Google Sans Code', sans-serif;
   margin-bottom: 24px;
   text-align: center;
@@ -11,26 +12,30 @@
   font-size: 30px;
 }
 
-.about-text {
+.why-text {
   display: none;
 }
-.about-list {
+
+.why-list {
   display: flex;
   gap: 24px;
   flex-direction: column;
   padding: 0 31px;
 }
-.about-icon {
+
+.why-icon {
   display: none;
 }
-.about-h {
+
+.why-h {
   font-family: 'Google Sans Code', sans-serif;
   font-weight: 800;
   font-size: 16px;
   color: #e7e6ca;
   margin-bottom: 4px;
 }
-.about-p {
+
+.why-p {
   font-family: 'Google Sans Code', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -39,15 +44,16 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .about {
+  .why-section {
     background: linear-gradient(to left, #b57bee 0%, #392d69 100%);
   }
 
-  .about-title {
+  .why-title {
     font-size: 56px;
     margin-bottom: 42px;
   }
-  .about-text {
+
+  .why-text {
     display: block;
     font-family: 'Google Sans Code', sans-serif;
     font-weight: 400;
@@ -59,35 +65,38 @@
     margin: 0 auto;
     margin-bottom: 32px;
   }
-  .about-list {
+
+  .why-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     flex-direction: row;
   }
-  .about-item {
+
+  .why-item {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 24px 16px;
     background-color: #e7e6ca;
 
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 48px) / 4);
   }
 
-  .about-h {
+  .why-h {
     font-size: 20px;
-    white-space: nowrap;
+    color: black;
+    margin-bottom: 12px;
+  }
+  .why-p {
     color: black;
   }
-  .about-p {
-    color: black;
-  }
-  .about-icon {
+
+  .why-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,15 +106,11 @@
     background: #f0d1bc;
     border-radius: 3px;
     color: #ff8b3d;
-  }
-  .accordion-icon {
-    width: 24px;
-    height: 24px;
-  }
-  .about-line {
-    display: flex;
-    align-items: center;
-    gap: 16px;
     margin-bottom: 16px;
+  }
+
+  .why-accordion-icon {
+    width: 37px;
+    height: 37px;
   }
 }
