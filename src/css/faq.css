@@ -69,6 +69,7 @@
 /* icon */
 .accordion-icon {
   transition: transform 0.3s ease;
+   flex-shrink: 0;
 }
 .ac.is-active .accordion-icon {
   transform: rotate(180deg);
