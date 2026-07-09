@@ -6,7 +6,9 @@ const initRevealSections = () => {
   }
 
   if (!('IntersectionObserver' in window)) {
-    sections.forEach(section => section.classList.add('is-visible'));
+    sections.forEach(section => {
+      section.dataset.reveal = 'visible';
+    });
     return;
   }
 
@@ -14,9 +16,9 @@ const initRevealSections = () => {
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
+          entry.target.dataset.reveal = 'visible';
         } else {
-          entry.target.classList.remove('is-visible');
+          entry.target.dataset.reveal = 'hidden';
         }
       });
     },
@@ -27,7 +29,7 @@ const initRevealSections = () => {
   );
 
   sections.forEach(section => {
-    section.classList.add('reveal-section');
+    section.dataset.reveal = 'hidden';
     observer.observe(section);
   });
 };

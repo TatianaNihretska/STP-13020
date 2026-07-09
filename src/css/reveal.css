@@ -1,4 +1,4 @@
-.reveal-section {
+[data-reveal] {
   opacity: 0;
   transform: translateY(32px);
   transition:
@@ -7,13 +7,13 @@
   will-change: opacity, transform;
 }
 
-.reveal-section.is-visible {
+[data-reveal='visible'] {
   opacity: 1;
   transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal-section {
+  [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;

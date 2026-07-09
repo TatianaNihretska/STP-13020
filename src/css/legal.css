@@ -1,6 +1,6 @@
 .legal-page {
   min-height: 100vh;
-  padding: 104px 0 72px;
+  padding: 40px 0 72px;
   background: rgba(57, 45, 105, 1);
 
   color: var(--color-surface);
@@ -84,7 +84,7 @@
 
 @media (min-width: 1440px) {
   .legal-page {
-    padding: 174px 0 96px;
+    padding: 72px 0 96px;
   }
 
   .legal-layout {

@@ -49,7 +49,7 @@
     transform 650ms ease;
 }
 
-.gameplay.is-visible .gameplay-card {
+.gameplay[data-reveal='visible'] .gameplay-card {
   opacity: 1;
   transform: translateY(0);
 }

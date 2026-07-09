@@ -213,12 +213,12 @@
     transform: translateX(96px) rotate(19deg);
   }
 
-  .gameplay-features.is-visible .gameplay-phone-first {
+  .gameplay-features[data-reveal='visible'] .gameplay-phone-first {
     opacity: 1;
     transform: translateX(0) rotate(-11deg);
   }
 
-  .gameplay-features.is-visible .gameplay-phone-second {
+  .gameplay-features[data-reveal='visible'] .gameplay-phone-second {
     opacity: 1;
     transform: translateX(0) rotate(11.13deg);
   }

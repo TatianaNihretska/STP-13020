@@ -13,14 +13,14 @@ if (heroImageEl) {
     }
 
     isAnimating = true;
-    heroImageEl.classList.add('is-switching');
+    heroImageEl.dataset.switching = 'true';
 
     window.setTimeout(() => {
       isClickedImage = !isClickedImage;
       heroImageEl.src = isClickedImage ? heroClickSrc : heroDefaultSrc;
 
       window.setTimeout(() => {
-        heroImageEl.classList.remove('is-switching');
+        heroImageEl.dataset.switching = 'false';
         isAnimating = false;
       }, 80);
     }, 180);
